@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Lato:wght@400;700&display=swap'); 
+
+@layer components { 
+
+    body {
+      @apply bg-gray-900;
+      @apply text-gray-100;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-bold;
+        font-family: 'Lato', sans-serif;
+    }
+
+    h1 {
+        @apply text-4xl;
+    }
+
+    h2 {
+        @apply text-3xl;
+    }
+
+    h3 {
+        @apply text-2xl;
+    }
+
+    h4 {
+        @apply text-xl;
+    }
+
+    p {
+        @apply font-normal;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .btn-common {
+      @apply m-1 p-1 flex rounded-xl justify-center items-center;
+    }
+    .btn-common-pink {
+      @apply m-1 flex rounded-xl justify-center items-center bg-pink-500 text-white hover:bg-white hover:text-pink-800 hover:border-pink-800 hover:border-2 border-0 p-2 font-bold;
+    }
+    .link-align-center {
+      @apply text-center justify-center items-center;
+    }
+}
+  
